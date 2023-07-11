@@ -39,7 +39,7 @@ function FeedbackForm({handleAdd}) {
     e.preventDefault()
     if(text.trim().length >= 10) {
       const newFeedback = {text,rating}
-      if(feedbackEdit.edit == true) {
+      if(feedbackEdit.edit) {
         updateFeedback(feedbackEdit.item.id,newFeedback)
 
       } else {
